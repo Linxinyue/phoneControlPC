@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.sangzhenya.mousephone.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ipport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="ip"
+            android:text="192.168.0.20" />
+
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:text="8899" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ipport"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getConnect"
+            android:layout_weight="1"
+            android:text="横屏" />
+        <Button
+            android:text="竖屏"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:onClick="getConnectVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

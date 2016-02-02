@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhenya.socket.MainActivity">
+
+   <!--<EditText
+       android:id="@+id/editMessage"
+       android:hint="send message"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />-->
+    <Button
+        android:id="@+id/send"
+        android:text="右键"
+        android:layout_width="180dp"
+        android:background="#eaeaea"
+        android:layout_height="100dp" />
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/getConnect"
+            android:text="连接"
+            android:layout_width="60dp"
+            android:layout_height="100dp" />
+        <Button
+            android:id="@+id/getDisconnect"
+            android:text="断开"
+            android:paddingLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="100dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/messageBox"
+        android:layout_below="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
